@@ -1,8 +1,7 @@
-# DeepLearningProcessing
-This still contains a lot of bugs.
+# Deep Learning on Processing
 
-Trying to implement back propagation method of deep learning using Processing.
-It may be working correctly, but my instinct does not say so.
+Back Propagation test on processing.
 
-This program adjust the weight of each node of deep learning method,
-and make it fit to the given function by principals of back propagation.
+The test class includes visualization of an approximation of aribitrary f: R -> R function by using back propagation method. As a default, this system tries to approximate sinusoidal function.
+
+There seems to be a limitation that sigmoid function that is used on neural network's feed forward system can approximate only either monotonic decreasing or increasing function. This limitation may be fixed by dividing the domain of function.
