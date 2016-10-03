@@ -14,7 +14,7 @@ public class Node {
     // randomize weight list at first
     // should be (0, 1 * inputAmount)
     for (int i = 0; i < outputAmount; i++) {
-      weightList[i] = random(0.001);
+      weightList[i] = random(-1, 1);
     }
   }
   
@@ -73,7 +73,7 @@ public class Node {
     
     inputSignalSum = sum;
     
-    outputSignal = 1 / (1 + exp(sum));
+    outputSignal = 1 / (1 + exp(-sum));
     
     for (int i = 0; i < weightAndOutputSignalCombined.length; i++) {
       weightAndOutputSignalCombined[i] = weightList[i] * outputSignal;

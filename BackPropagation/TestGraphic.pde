@@ -2,7 +2,7 @@
 // set size(600, 600);
 public class TestGraphic {
   // NeuralNetwork (int inputLayerSize, int hiddenLayerNum, int hiddenLayerSize, int outputLayerSize)
-  public NeuralNetwork nn = new NeuralNetwork (2, 9, 10, 3);
+  public NeuralNetwork nn = new NeuralNetwork (2, 3, 4, 3);
   public float radius = 10;
   
   public TestGraphic () {
